@@ -1,11 +1,6 @@
 ---
 #### Ansible Playbook to perform Kernel upgradation on RHEL/CentOS Server ####
 
-- hosts: linux-dev-servers
-  become_user: root
-  serial: 2
-
-
   tasks:
 
     - name:  verify application/database processes are not running
